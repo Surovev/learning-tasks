@@ -1,0 +1,77 @@
+@import "./global.less";
+
+html {
+    height: 100%;
+}
+
+.body {
+    font-family: Times New Roman;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 17px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+ 
+.header {
+    height: 160px;
+    width: 100%;
+    background-color: @header-color;
+    padding: 16px;
+}
+
+.frame {
+    display: flex;
+    flex-grow: 1;
+
+    &__article {
+        width: 100%;
+        padding: 16px;
+    }
+
+    &__aside {
+        width: 240px;
+        background-color: @aside-color;
+        padding: 16px;
+
+    }
+
+    &__nav {
+        width: 240px;
+        background-color: @nav-color;
+        padding: 16px;
+    }
+}
+
+.footer {
+    height: 160px;
+    width: 100%;
+    background-color: @footer-color;
+    padding: 16px;
+}
+
+.form {
+    width: 680px;
+    height: 670px;
+
+    &__input-row {
+        width: 550px;
+        margin: 0 auto 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__element {
+        width: 260px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    &__input-selector {
+        width: 550px;
+    }
+}

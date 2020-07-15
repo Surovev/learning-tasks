@@ -1,22 +1,18 @@
+@import "global.less";
+
 html {
     height: 100%;
 }
 
-.page {
-    width: 100%;
-    min-height: 100%;
-    
-}
-
 .body {
     font-family: Times New Roman;
-font-style: normal;
-font-weight: normal;
-font-size: 15px;
-line-height: 17px;
-min-height: 100%;
-display: flex;
-
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 17px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
@@ -27,18 +23,14 @@ display: flex;
 }
 
 .frame {
-
-        display: flex;
-        flex-grow: 1;
-        min-height: ~"calc(100% - 320px)";
-       
+    display: flex;
+    flex-grow: 1;
 
     &__article {
         min-height: 100%;
-        flex-grow: 1;
+        width: 100%;
         padding: 16px;
-}
-    
+    }
 
     &__aside {
         width: 240px;
@@ -46,23 +38,20 @@ display: flex;
         padding: 16px;
         min-height: 100%;
 
-}
-    
+    }
 
+    &__nav {
+        width: 240px;
+        background-color: @aside-color;
+        padding: 16px;
+        min-height: 100%;
 
+    }
 }
+
 .footer {
     height: 160px;
     width: 100%;
     background-color: @footer-color;
-    bottom: 160px;
     padding: 16px;
-}
-.nav {
-    width: 240px;
-    background-color: @nav-color;
-    padding: 16px;
-    min-height: 100%;
-    
-
 }

@@ -1,0 +1,49 @@
+/* colors */
+html {
+  height: 100%;
+}
+.page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.body {
+  font-family: Times New Roman;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 17px;
+  min-height: 100%;
+  display: flex;
+}
+.header {
+  height: 160px;
+  width: 100%;
+  background-color: #9ACD32;
+  padding: 16px;
+}
+.frame {
+  display: flex;
+  flex-grow: 1;
+}
+.frame__article {
+  flex-grow: 1;
+  padding: 16px;
+}
+.frame__aside {
+  width: 240px;
+  background-color: #F5F5DC;
+  padding: 16px;
+}
+.footer {
+  height: 160px;
+  width: 100%;
+  background-color: #9ACD32;
+  padding: 16px;
+}
+.nav {
+  width: 240px;
+  background-color: #D7E8D4;
+  padding: 16px;
+  min-height: 100%;
+}

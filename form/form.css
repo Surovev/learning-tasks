@@ -23,7 +23,6 @@ html {
   flex-grow: 1;
 }
 .frame__article {
-  min-height: 100%;
   width: 100%;
   padding: 16px;
 }
@@ -31,18 +30,33 @@ html {
   width: 240px;
   background-color: #F5F5DC;
   padding: 16px;
-  min-height: 100%;
 }
 .frame__nav {
   width: 240px;
-  background-color: #F5F5DC;
+  background-color: #D7E8D4;
   padding: 16px;
-  min-height: 100%;
 }
 .footer {
   height: 160px;
   width: 100%;
   background-color: #9ACD32;
-  bottom: 160px;
   padding: 16px;
+}
+.form {
+  width: 680px;
+  height: 670px;
+}
+.form__input-row {
+  width: 550px;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.form__element {
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+}
+.form__input-selector {
+  width: 550px;
 }
